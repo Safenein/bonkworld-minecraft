@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-25.05";
+    nix-minecraft.url = "github:Infinidoge/nix-minecraft";
   };
 
   outputs = {
