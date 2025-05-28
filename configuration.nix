@@ -131,8 +131,8 @@
   # Disable unnecessary services
   services.avahi.enable = false;
   services.printing.enable = false;
+  services.pulseaudio.enable = false;
   hardware.alsa.enable = false;
-  hardware.pulseaudio.enable = false;
 
   # Minimal package set
   environment.systemPackages = with pkgs; [
