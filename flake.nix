@@ -9,15 +9,20 @@
   outputs = {
     self,
     nixpkgs,
-  }: {
+    ...
+  } @ inputs: {
     nixosConfigurations = {
       bonkworld = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
           ./configuration.nix
           ./hardware-configuration.nix
+          ./minecraft/main.nix
         ];
-        specialArgs = {inherit self;};
+        specialArgs = {
+          inherit self;
+          inherit inputs;
+        };
       };
     };
   };
