@@ -18,6 +18,11 @@
           ./configuration.nix
           ./hardware-configuration.nix
           ./minecraft/main.nix
+          inputs.nix-minecraft.nixosModules.minecraft-servers
+          {
+            nixpkgs.overlays = [inputs.nix-minecraft.overlay];
+            nixpkgs.config.allowUnfree = true;
+          }
         ];
         specialArgs = {
           inherit self;
