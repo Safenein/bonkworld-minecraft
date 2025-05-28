@@ -6,9 +6,9 @@
   imports = [
     inputs.nix-minecraft.nixosModules.minecraft-servers
   ];
-  nixpkgs.overlays = [inputs.nix-minecraft.overlay];
 
   config = {
+    nixpkgs.overlays = [inputs.nix-minecraft.overlay];
     services.minecraft-servers.servers.bonkworld = {
       enable = true;
       package = pkgs.fabricServers.fabric-1_21_5;
