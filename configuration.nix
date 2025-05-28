@@ -157,9 +157,12 @@
     bantime = "1h";
     jails = {
       ssh = {
-        enabled = true;
-        filter = "sshd";
-        action = "iptables[name=ssh, port=ssh, protocol=tcp]";
+        settings = {
+          port = "ssh";
+          filter = "sshd";
+          logPath = "/var/log/auth.log";
+          maxRetry = 3;
+        };
       };
     };
   };
