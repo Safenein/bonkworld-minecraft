@@ -142,7 +142,6 @@
     nethogs
     tcpdump
     fail2ban
-    ufw
   ];
 
   # Fail2ban for SSH protection
