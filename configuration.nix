@@ -195,11 +195,7 @@
   # Disable X11 completely
   services.xserver.enable = false;
 
-  # File system optimizations for SSD
-  fileSystems."/".options = ["noatime" "nodiratime" "discard"];
-
   # Swap configuration (minimal)
-  swapDevices = [];
   zramSwap = {
     enable = true;
     algorithm = "zstd";

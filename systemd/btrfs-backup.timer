@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Btrfs Backup Daily
+Requires=btrfs-backup.service
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+RandomizedDelaySec=30min
+
+[Install]
+WantedBy=timers.target
