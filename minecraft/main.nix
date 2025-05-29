@@ -163,6 +163,42 @@
                   url = "https://cdn.modrinth.com/data/PXaH6GuW/versions/ZGmVKBZ9/toms_mobs-2.2.8%2B1.21.5.jar";
                   sha512 = "39abfc1e2ccff4bb699c797fdd8ca23dd24aca476f7cef8429bc872c8f2328a0ffb13b8c6904e194ada2d9dc1832d20800349d35a67ceedb6df2a57e440e8d8f";
                 };
+                RightClickHarvest = fetchurl {
+                  url = "https://cdn.modrinth.com/data/Cnejf5xM/versions/9jOYB5rp/rightclickharvest-fabric-4.5.3%2B1.21.5.jar";
+                  sha512 = "19fd140057be549d252de5cc20f0dec855e6aeb048d90a4f4741eb615245fed805a8a7f372655f81d0b06283c83c89c1ba8de04ee5339b5735bf53b27751b65f";
+                };
+                DoubleDoor = fetchurl {
+                  url = "https://cdn.modrinth.com/data/JrvR9OHr/versions/1gYbfoqD/doubledoors-1.21.5-7.0.jar";
+                  sha512 = "1640722969e1d6ed9474cb968381359ee9e7a61509a730f4c2cf75d84069fe3afe7ef2d306459a0597f4453dac22dd2d4414ec618642600cddeeb263f8b98d88";
+                };
+                UniversalGraves = fetchurl {
+                  url = "https://cdn.modrinth.com/data/yn9u3ypm/versions/ejJjBZIM/graves-3.7.1%2B1.21.5.jar";
+                  sha512 = "2852ccf4ea276e48508af3e5c61dd8c010598ee158e05cfb7f9f6548c2e3915e6c7e4ae5450ebec71c4e7e28ef3f669e2f21eea9931d897f1b4ef2b41e4d9e29";
+                };
+                BoruvkaFood = fetchurl {
+                  url = "https://cdn.modrinth.com/data/l4Fz32NE/versions/O7MvWl5K/borukva-food-0.1.12%2B1.21.5.jar";
+                  sha512 = "4b2bfcf478fa8285cea5adf27a806b518b3236f3ae62e2c278027b7fa332e56fe4dd047fba9696797cf67f878fde52dfb61a2fdf0dc19debedd4b74bb2a9245c";
+                };
+                BoruvkaFoodExotic = fetchurl {
+                  url = "https://cdn.modrinth.com/data/odwLjifj/versions/Yh63f5Yo/borukva-food-exotic-3.8.jar";
+                  sha512 = "2d2deee173741033d75751aa3ba96f5b12939eabc0e71c7391df9b202c0d2a81d2dc808941e7feceda36755bb628f565c0d3e94d14dfd20c036e47a2f160c4e7";
+                };
+                Brewery = fetchurl {
+                  url = "https://cdn.modrinth.com/data/nr7cSJlY/versions/XFrtRxXM/brewery-0.11.1%2B1.21.5.jar";
+                  sha512 = "c3a96616076f7e1b7b09b1ef8df79e9f2a140e7e49772e6b9063da361e270df708d06a8558232cb389a51e9ebdefb90867d6f2f47bf5a1ac42e12f1b8de7455a";
+                };
+                SleepWarp = fetchurl {
+                  url = "https://cdn.modrinth.com/data/DlSXkZVT/versions/vnRGqK0o/sleepwarp-2.7.0%2B1.21.5.jar";
+                  sha512 = "905b2aaf51ddff2f0d87bdd9c854ee5b936da1e0d242e7bfbb6e944e54a10e9779a6c979a21d88a20187f891ee54900b5f63862d36629d492e0ea0053b87967f";
+                };
+                Ouch = fetchurl {
+                  url = "https://cdn.modrinth.com/data/nbxqFJCy/versions/VbLrL1Ak/ouch-1.4.0%2B1.21.5.jar";
+                  sha512 = "314fa99c73806def9b06eaf3c4da86e4434dd4888ba67a7184b1bc04a462f6a56c59b63dd83d7f15a84ab07f021cc62e2eaa0b95d41534a65dbd950739fe0df4";
+                };
+                Danse = fetchurl {
+                  url = "https://cdn.modrinth.com/data/vSdZ5THv/versions/tIqr323C/danse-2.1.3%2B1.21.5.jar";
+                  sha512 = "699313d223002f5ee953f7ff699fd19e5aea1b65061359e1f3f94e7de1176e3447aceedfe19cb000d6d54e838e86a7c3976e223d66e347acda44caf2b5552903";
+                };
               }
             );
         };
