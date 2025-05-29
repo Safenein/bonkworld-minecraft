@@ -23,8 +23,6 @@
           spawn-protection = 0;
           log-ips = false;
           op-permission-level = 3;
-          resource-pack = "https://cdn.modrinth.com/data/tpehi7ww/versions/jHLhATWl/DnT%20v4.7.zip";
-          resource-pack-hash = "05ca2ecbb68b19b0da11ebda79cec5646ac01f94";
         };
 
         symlinks = {
