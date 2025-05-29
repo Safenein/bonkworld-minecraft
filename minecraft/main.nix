@@ -23,6 +23,8 @@
           spawn-protection = 0;
           log-ips = false;
           op-permission-level = 3;
+          resource-pack = "https://cdn.modrinth.com/data/tpehi7ww/versions/jHLhATWl/DnT%20v4.7.zip";
+          resource-pack-hash = "05ca2ecbb68b19b0da11ebda79cec5646ac01f94";
         };
 
         symlinks = {
@@ -64,6 +66,26 @@
                 NetherPortalFix = fetchurl {
                   url = "https://cdn.modrinth.com/data/nPZr02ET/versions/3xwbxqcv/netherportalfix-fabric-1.21.5-21.5.1.jar";
                   sha512 = "267ed5768d1a232bad907cbd5b1f226309ad1953f7267b6308c3172cad842bb5ab51d34c4530b373ab24c54e3d97a9cba33832eac1bf9fa3cf362bfd754ae7c3";
+                };
+                DungeonsAndTaverns = fetchurl {
+                  url = "https://cdn.modrinth.com/data/tpehi7ww/versions/xuwRmYo8/dungeons-and-taverns-v4.7.jar";
+                  sha512 = "048f097bcf62ee99c601f99611c0b1c7d954fd01b0dd1a73224ad25404230aff6f02bae9b235bce7ac881adaa0719661bc659601b777310d0fbd1d6270f59882";
+                };
+                BannerFlags = fetchurl {
+                  url = "https://cdn.modrinth.com/data/cCStmVIN/versions/1Bj3xcYf/banner-flags-2.9.jar";
+                  sha512 = "fa3b35ce0fc0988c4b8044568b570b0ad64b0943945d25ff4127859717cdef6347e6ad95d902b52685ba4119846045c2f083ef5534338d823309f9244777c07b";
+                };
+                Terralith = fetchurl {
+                  url = "https://cdn.modrinth.com/data/8oi3bsk5/versions/vGKEdR1w/Terralith_1.21.x_v2.5.9.jar";
+                  sha512 = "7adb34180c6f7f4984b500577f74d2602adc551da6f0f5fdfd4c20fc383560312121277bb6ff6acedf30d294af65cba13a1d28326b1d9575253ea7c5b5eaf895";
+                };
+                SpawnAnimations = fetchurl {
+                  url = "https://cdn.modrinth.com/data/zrzYrlm0/versions/YW1ZN5zl/spawnanimations-v1.10.1-mc1.17-1.21.5-mod.jar";
+                  sha512 = "be2c1edc675d18f77ce69b7cd8291e8c8f682362074c6b4fee63fe02c6d4d39cfde9b18ab61dcd4fe6fab3901c67da833d0efb11d77cbf593d1b5151dc9bf31c";
+                };
+                StructoryTowers = fetchurl {
+                  url = "https://cdn.modrinth.com/data/j3FONRYr/versions/oteEZjc2/Structory_Towers_1.21.x_v1.0.11.jar";
+                  sha512 = "e72823a2e6c66898a8834098c8e50d3f2c176005d6955682f1b9f5005030b268419796f58ed687b1511038cee5b178cc379a77e604073c6b55f82c4ed1310012";
                 };
               }
             );
