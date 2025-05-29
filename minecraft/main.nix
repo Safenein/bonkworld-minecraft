@@ -87,6 +87,82 @@
                   url = "https://cdn.modrinth.com/data/j3FONRYr/versions/oteEZjc2/Structory_Towers_1.21.x_v1.0.11.jar";
                   sha512 = "e72823a2e6c66898a8834098c8e50d3f2c176005d6955682f1b9f5005030b268419796f58ed687b1511038cee5b178cc379a77e604073c6b55f82c4ed1310012";
                 };
+                Polymer = fetchurl {
+                  url = "https://cdn.modrinth.com/data/xGdtZczs/versions/dqiMdAQo/polymer-bundled-0.12.6%2B1.21.5.jar";
+                  sha512 = "cb59aed83e899feac07a7d14dea635e5e28ed486f383c89fb59f778bbd7e481d016875004804e7a6c3c9e01e60929174708d40dce8a30bd69093c24fa9d837a1";
+                };
+                PolyDecoration = fetchurl {
+                  url = "https://cdn.modrinth.com/data/5710VC7f/versions/aOahWdc9/polydecorations-0.7.4%2B1.21.5.jar";
+                  sha512 = "c34b6e83e3a0600c7dcbe13f6872f883360c10f677b4145e50c85f472c1ed9dd22bc615f3680257f9b822e27565266d95f0aae63d2f338e7a7eb3d755d1baf6c";
+                };
+                PolyFactory = fetchurl {
+                  url = "https://cdn.modrinth.com/data/MikpSrAF/versions/6TpfrCzs/polyfactory-0.7.1%2B1.21.5.jar";
+                  sha512 = "8315d6a0503c44e28732f90c490a6050164229e8d50d79c663a1bd43e7107f39c97aa629de099386418ad8ecf9d952722c22bce4f8350845d944f32a26afbce5";
+                };
+                PolySit = fetchurl {
+                  url = "https://cdn.modrinth.com/data/G9eJHDO2/versions/RxruJi0u/polysit-0.9.5%2Bmc.1.21.5.jar";
+                  sha512 = "9e628a0a0097576bfa0572021a0449124bb45214892948255b35b4d45bacdf0861a5828289347606d95b97d314e7cf534fa39c10a2f744dbea3f6cdd529e0679";
+                };
+                PolyChess = fetchurl {
+                  url = "https://cdn.modrinth.com/data/n4KHrvqn/versions/H16NA3Dm/polychess-1.21.5-0.1.jar";
+                  sha512 = "9dc6cf51e5e9b94247ec95c280503a4e38e9364ca9e1b6b98b404b994bce3727c2022a1510da3a25677efd2ea7b959b00ce4adaab3eac7c7725b8364f4ba0651";
+                };
+                PolyTrinkets = fetchurl {
+                  url = "https://cdn.modrinth.com/data/G8hlgtEk/versions/85PakGw6/trinkets-3.11.0-beta.1%2Bpolymerport.1.jar";
+                  sha512 = "21ffc1d1c966c8b70f0e7702cac4562042855f161b09b2c2b636c5d7e23364da5603ea7af0923a03d7f1b1db976eea0c7a8b8b3d4cc0cff1ed39068efef03774";
+                };
+                MoreTools = fetchurl {
+                  url = "https://cdn.modrinth.com/data/S6P4vaGq/versions/jX9kRAFI/moretools-1.8.2%2B1.21.5.jar";
+                  sha512 = "03ab1f50860d15977b3373644b3fd170d558593415bf7857b57b14403a0cb95b1020541496f47de2cae667917c47a99409537433f6991446609d7f2300b7b44a";
+                };
+                MoreFurnaces = fetchurl {
+                  url = "https://cdn.modrinth.com/data/l5c3cXjI/versions/pXLsrSm0/morefurnaces-1.2.0%2B1.21.5.jar";
+                  sha512 = "aabd976e534fbc835f2e585c5ca45b75aa194675f177d7f0c60eb2002f2dccf531fd39f895bc76fd4c67f4d3d5acc73fd7a3ee16662a1c074ee2722592542a15";
+                };
+                Spiders2_0 = fetchurl {
+                  url = "https://cdn.modrinth.com/data/pHIx2aDH/versions/ERWlEdKL/spiderstpo-1.0.0.jar";
+                  sha512 = "0093d97a084480cb84430214ff0c572da5dc871bf505f72a298ea0964fa7c80b35ccf03ed6e01adda36b7c231a6f73901faba9c9b72531a9450894f2b1d21617";
+                };
+                ArmorStandEditor = fetchurl {
+                  url = "https://cdn.modrinth.com/data/Ef9ZREBZ/versions/62aDXxe8/armor-stand-editor-2.8.0%2B1.21.5-rc1.jar";
+                  sha512 = "400373c7a5349eaeff3681ce721a9097f924b69f25716fc370bd3d5f9e5643e615f274f4e7e9e5ddd88a7de3e70164ce174f9da4d76a6caff0834f6d4b74c170";
+                };
+                ServerBackpacks = fetchurl {
+                  url = "https://cdn.modrinth.com/data/E7IsBILg/versions/Np2h5oLp/serverbackpacks-1.3%2B1.21.5.jar";
+                  sha512 = "cb0352cd7a3603ad9b6da4deeef7e2d2aeb14063d4d2941fe4e65456398c0b5178b16d38eb2be071f4dd18320c5f895a6a19ab0e0e5f869aec04598ad734da2f";
+                };
+                Televator = fetchurl {
+                  url = "https://cdn.modrinth.com/data/9kdDMOvM/versions/Nck9ihns/televator-1.2.4.jar";
+                  sha512 = "85095585efbf2401fa24f9349e37dc7e428a107567c9f572bb31e2235fe23880d03920bd2ce04dca15215a59278cf158d1c33d5828146402089d4cf772e799ab";
+                };
+                GoneFishing = fetchurl {
+                  url = "https://cdn.modrinth.com/data/EAw8Gldo/versions/CEr25sSE/go-fish-1.7.2%2B1.21.5.jar";
+                  sha512 = "e425316b2573360b55a011605c82006ab5bec952125d81551da184395b7dd4cbe4f24616de4ea1017e57f7241e2634d9b020ee9aab6376c1feb46b496ca7468d";
+                };
+                Filament = fetchurl {
+                  url = "https://cdn.modrinth.com/data/yANxwqSX/versions/LcoxSXn4/filament-0.17.6%2B1.21.5.jar";
+                  sha512 = "ab344afc029520d9f54d58968ca2f169c957aba13f0f0e0eab0469a338e1ea2cdd51ff8957d666cc29027fb907a7ea3174b9508e43b593469be5b0f3bcd291b7";
+                };
+                TomsAdditionsDecoAndFurnitures = fetchurl {
+                  url = "https://cdn.modrinth.com/data/DLsxkJLC/versions/DILLXbPo/tsa-decorations-2.1.6%2B1.21.5.jar";
+                  sha512 = "e024a31764825d4e42cde34967749c29baedf1e9717040f9e660a8a2ccbeb09389e7c0361e94ffa1c47cd30726cee857c9a9759ae04680e0823c00ac26516182";
+                };
+                TomsAdditionsStones = fetchurl {
+                  url = "https://cdn.modrinth.com/data/iLZabwvA/versions/K7Ji5g4r/tsa-stone-1.1.5.jar";
+                  sha512 = "b7cff1efd3683c102f0a29f6ba2497da9f7993874f6533e7de5423c4f91bb2c8a966dc7330ca36519ac4110fd910e503c6f25eb5f47f86b9d64246f4506b094e";
+                };
+                TomsAdditionsPlanks = fetchurl {
+                  url = "https://cdn.modrinth.com/data/SU4YwX00/versions/vYmZLUa0/tsa-planks-1.1.2%2B1.21.2-rc1.jar";
+                  sha512 = "ea4aa0921aeb424dae494f9112867e46ac0d1b356c638760f60680bca816e18ac7bc6c41f511fd55535b3c179b4024d3a9366ad8e5522373c23a6e3893a33fa7";
+                };
+                TomsAdditionsConcrete = fetchurl {
+                  url = "https://cdn.modrinth.com/data/MXH6I6VI/versions/HT4hFud3/tsa-concrete-1.1.1%2B1.21.2-rc1-1.21.2-rc1.jar";
+                  sha512 = "4ac25322d27bd01439d9e81c348ba679eb2a89a3e8c383348047766f97570bd610e6059912cd8b2a30689656c41d619475fe878d846099f0f11737560abf35ec";
+                };
+                TomsAdditionsMobs = fetchurl {
+                  url = "https://cdn.modrinth.com/data/PXaH6GuW/versions/ZGmVKBZ9/toms_mobs-2.2.8%2B1.21.5.jar";
+                  sha512 = "39abfc1e2ccff4bb699c797fdd8ca23dd24aca476f7cef8429bc872c8f2328a0ffb13b8c6904e194ada2d9dc1832d20800349d35a67ceedb6df2a57e440e8d8f";
+                };
               }
             );
         };
