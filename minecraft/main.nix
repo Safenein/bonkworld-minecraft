@@ -46,6 +46,15 @@
             "_c9" = "Moves resource pack generation earlier when running on server. Might break some mods.";
             "setup_early" = false;
           });
+          "resourcepacks" = with pkgs;
+            linkFarmFromDrvs "resourcepacks" (
+              builtins.attrValues {
+                DungeonsAndTaverns = fetchurl {
+                  url = "https://cdn.modrinth.com/data/tpehi7ww/versions/jHLhATWl/DnT%20v4.7.zip";
+                  sha512 = "69513a5522a2379f44230146179215b74339b7ca47f6114aa69ba31bda8b25a54a8ccf89dd7211339eeeb03edd32c2154a8bd7efc1d9b64006ca5c7ba953ec0e";
+                };
+              }
+            );
           "mods" = with pkgs;
             linkFarmFromDrvs "mods" (
               builtins.attrValues {
