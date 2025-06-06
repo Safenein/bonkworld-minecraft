@@ -10,7 +10,7 @@
         autoStart = true;
         openFirewall = true;
         enableReload = true;
-        jvmOpts = "-Xmx8G -Xms8G -XX:+UnlockExperimentalVMOptions -XX:+UseZGC -XX:+UnlockGenerationalZGC -XX:+UseTransparentHugePages -XX:+UseLargePages -XX:+UseStringDeduplication -XX:+OptimizeStringConcat";
+        jvmOpts = "-Xmx8G -Xms8G -XX:+UnlockExperimentalVMOptions -XX:+UseZGC -XX:+ZGenerational -XX:+UseTransparentHugePages -XX:+UseLargePages -XX:+UseStringDeduplication -XX:+OptimizeStringConcat";
 
         serverProperties = {
           motd = "Bienvenue sur Bonk World!";
