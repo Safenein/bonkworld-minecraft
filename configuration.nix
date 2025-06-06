@@ -127,6 +127,9 @@
     "fs.suid_dumpable" = 0;
   };
 
+  # Enable udev for device management
+  services.udev.enable = true;
+
   # Disable unnecessary services
   services.avahi.enable = false;
   services.printing.enable = false;
