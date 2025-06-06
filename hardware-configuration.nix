@@ -14,61 +14,61 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-partlabel/disk-main-root";
+    { device = lib.mkDefault "/dev/disk/by-partlabel/disk-main-root";
       fsType = "btrfs";
       options = [ "subvol=@" ];
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-partlabel/disk-main-boot";
+    { device = lib.mkDefault "/dev/disk/by-partlabel/disk-main-boot";
       fsType = "vfat";
       options = [ "fmask=0022" "dmask=0022" ];
     };
 
   fileSystems."/boot/efi" =
-    { device = "/dev/disk/by-partlabel/disk-main-ESP";
+    { device = lib.mkDefault "/dev/disk/by-partlabel/disk-main-ESP";
       fsType = "vfat";
       options = [ "fmask=0022" "dmask=0022" ];
     };
 
   fileSystems."/home" =
-    { device = "/dev/disk/by-uuid/fce3ad87-9cad-41f7-8f0d-a0813ff80f0d";
+    { device = lib.mkDefault "/dev/disk/by-uuid/fce3ad87-9cad-41f7-8f0d-a0813ff80f0d";
       fsType = "btrfs";
       options = [ "subvol=@home" ];
     };
 
   fileSystems."/opt" =
-    { device = "/dev/disk/by-uuid/fce3ad87-9cad-41f7-8f0d-a0813ff80f0d";
+    { device = lib.mkDefault "/dev/disk/by-uuid/fce3ad87-9cad-41f7-8f0d-a0813ff80f0d";
       fsType = "btrfs";
       options = [ "subvol=@opt" ];
     };
 
   fileSystems."/srv" =
-    { device = "/dev/disk/by-uuid/fce3ad87-9cad-41f7-8f0d-a0813ff80f0d";
+    { device = lib.mkDefault "/dev/disk/by-uuid/fce3ad87-9cad-41f7-8f0d-a0813ff80f0d";
       fsType = "btrfs";
       options = [ "subvol=@srv" ];
     };
 
   fileSystems."/tmp" =
-    { device = "/dev/disk/by-uuid/fce3ad87-9cad-41f7-8f0d-a0813ff80f0d";
+    { device = lib.mkDefault "/dev/disk/by-uuid/fce3ad87-9cad-41f7-8f0d-a0813ff80f0d";
       fsType = "btrfs";
       options = [ "subvol=@tmp" ];
     };
 
   fileSystems."/var" =
-    { device = "/dev/disk/by-uuid/fce3ad87-9cad-41f7-8f0d-a0813ff80f0d";
+    { device = lib.mkDefault "/dev/disk/by-uuid/fce3ad87-9cad-41f7-8f0d-a0813ff80f0d";
       fsType = "btrfs";
       options = [ "subvol=@var" ];
     };
 
   fileSystems."/var/log" =
-    { device = "/dev/disk/by-uuid/fce3ad87-9cad-41f7-8f0d-a0813ff80f0d";
+    { device = lib.mkDefault "/dev/disk/by-uuid/fce3ad87-9cad-41f7-8f0d-a0813ff80f0d";
       fsType = "btrfs";
       options = [ "subvol=@var_log" ];
     };
 
   swapDevices =
-    [ { device = "/dev/disk/by-partlabel/disk-main-swap"; }
+    [ { device = lib.mkDefault "/dev/disk/by-partlabel/disk-main-swap"; }
     ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
