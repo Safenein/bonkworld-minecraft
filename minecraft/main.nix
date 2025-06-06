@@ -49,10 +49,6 @@
                   url = "https://cdn.modrinth.com/data/fQEb0iXm/versions/neW85eWt/krypton-0.2.9.jar";
                   sha512 = "2e2304b1b17ecf95783aee92e26e54c9bfad325c7dfcd14deebf9891266eb2933db00ff77885caa083faa96f09c551eb56f93cf73b357789cb31edad4939ffeb";
                 };
-                Moonrise = fetchurl {
-                  url = "https://cdn.modrinth.com/data/KOHu7RCS/versions/HA6FKQbq/Moonrise-Fabric-0.3.0-beta.1%2Bb641035.jar";
-                  sha512 = "856df809fe0a83a226e612613598c207d014a785f1dbbd657abb5e0231cc6f8081135fe9b7e08a3c2ef5fb10378816d8c1c7e8a694fa3483cc6c91acf1ee1332";
-                };
                 Noisium = fetchurl {
                   url = "https://cdn.modrinth.com/data/KuNKN7d2/versions/sUh67T4Y/noisium-fabric-2.6.0%2Bmc1.21.5.jar";
                   sha512 = "4471b6137de7e2109987df8fe62ac836741e68ba3c57303a0f2dc362c0ab8e7aca656d28046e250362316c1144396132a5531dfb12b5a664c68eb294991af938";
