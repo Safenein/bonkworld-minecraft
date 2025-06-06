@@ -84,8 +84,8 @@
               builtins.attrValues {
                 # Cabbage substances addon for Brewery
                 CabbageSubstances = fetchurl {
-                  url = "https://cdn.modrinth.com/data/nr7cSJlY/versions/XFrtRxXM/brewery-0.11.1%2B1.21.5.jar";
-                  sha512 = "c3a96616076f7e1b7b09b1ef8df79e9f2a140e7e49772e6b9063da361e270df708d06a8558232cb389a51e9ebdefb90867d6f2f47bf5a1ac42e12f1b8de7455a";
+                  url = "https://cdn.modrinth.com/data/izSO2Rn2/versions/vwYeKHZy/cabbage-substances-1.3.0.2-0.11.1.zip";
+                  sha512 = "b759b74858dfc7ed62afc8702b1a9eaad7be8cae42b758fa819c37eb9367ea2fdb6980967fbf054f66478913e494c5e5a8b6d1cf6116546a246ef7cf83c01469";
                 };
               }
             );
