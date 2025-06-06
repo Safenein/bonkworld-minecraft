@@ -87,7 +87,7 @@
     sudo = {
       enable = true;
       execWheelOnly = true;
-      wheelNeedsPassword = true;
+      wheelNeedsPassword = false;
     };
 
     # Disable polkit for headless server
