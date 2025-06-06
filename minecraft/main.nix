@@ -30,9 +30,10 @@
             DungeonsAndTaverns = pkgs.fetchurl {
               url = "https://cdn.modrinth.com/data/tpehi7ww/versions/jHLhATWl/DnT%20v4.7.zip";
               sha512 = "69513a5522a2379f44230146179215b74339b7ca47f6114aa69ba31bda8b25a54a8ccf89dd7211339eeeb03edd32c2154a8bd7efc1d9b64006ca5c7ba953ec0e";
+              name = "DnT v4.7.zip";
             };
           };
-          resourcepackZips = builtins.map (name: "resourcepacks/${builtins.baseNameOf (builtins.getAttr name resourcepackDefs).url}") (builtins.attrNames resourcepackDefs);
+          resourcepackZips = builtins.map (name: "resourcepacks/${(builtins.getAttr name resourcepackDefs).name}") (builtins.attrNames resourcepackDefs);
         in {
           "config/polymer/auto-host.json" = pkgs.writeText "polymer-auto-host.json" (builtins.toJSON {
             "_c1" = "Enables Polymer's ResourcePack Auto Hosting";
