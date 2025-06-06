@@ -197,6 +197,22 @@
                   url = "https://cdn.modrinth.com/data/vSdZ5THv/versions/tIqr323C/danse-2.1.3%2B1.21.5.jar";
                   sha512 = "699313d223002f5ee953f7ff699fd19e5aea1b65061359e1f3f94e7de1176e3447aceedfe19cb000d6d54e838e86a7c3976e223d66e347acda44caf2b5552903";
                 };
+                Collective = fetchurl {
+                  url = "https://cdn.modrinth.com/data/e0M1UDsY/versions/aCWSF57s/collective-1.21.5-8.3.jar";
+                  sha512 = "bf47502d20e03c2fd5964e4799d7988334358ffe26cbb9b9414d453d771a19938e13dcc0989f5b1c0c5e965f35a9f480c95cf0849818c6433f470771c4c5229e";
+                };
+                ArchitecturyAPI = fetchurl {
+                  url = "https://cdn.modrinth.com/data/lhGA9TYQ/versions/ImZUcNzP/architectury-16.1.4-fabric.jar";
+                  sha512 = "2edf94af0b6fc9e72e91b4a094e7168b4c2fedbdc0c0713b01d817e4294e297a75fdd8cd89e6e50a9a559d7bf0ad75fcb93d35e1b0beb62c9d1d814f94b53cdf";
+                };
+                Balm = fetchurl {
+                  url = "https://cdn.modrinth.com/data/MBAkmtvl/versions/KHiNGdha/balm-fabric-1.21.5-21.5.17.jar";
+                  sha512 = "91cad77f3be459e7d04941546a3b79f5cad09bad8cd54660c939665db6a441ceaa1be2a3500c5e89415cc9ea57719655aaa61c820731bac6234074e3ac2fda0d";
+                };
+                JamLib = fetchurl {
+                  url = "https://cdn.modrinth.com/data/IYY9Siz8/versions/MrRqh8ql/jamlib-fabric-1.3.5%2B1.21.5.jar";
+                  sha512 = "74536d9f7eefa43d22d9737153548003c2b1d9dbbb9180490162336f3b68b273104f77241680f7f9a32808577abd87cbd2c53d3ea4a011ab6f928b3cb53acdd6";
+                };
               }
             );
         };
