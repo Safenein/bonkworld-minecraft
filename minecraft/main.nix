@@ -25,7 +25,15 @@
           op-permission-level = 3;
         };
 
-        symlinks = {
+        symlinks = let
+          resourcepackDefs = {
+            DungeonsAndTaverns = pkgs.fetchurl {
+              url = "https://cdn.modrinth.com/data/tpehi7ww/versions/jHLhATWl/DnT%20v4.7.zip";
+              sha512 = "69513a5522a2379f44230146179215b74339b7ca47f6114aa69ba31bda8b25a54a8ccf89dd7211339eeeb03edd32c2154a8bd7efc1d9b64006ca5c7ba953ec0e";
+            };
+          };
+          resourcepackZips = builtins.map (name: "resourcepacks/${builtins.baseNameOf (builtins.getAttr name resourcepackDefs).url}") (builtins.attrNames resourcepackDefs);
+        in {
           "config/polymer/auto-host.json" = pkgs.writeText "polymer-auto-host.json" (builtins.toJSON {
             "_c1" = "Enables Polymer's ResourcePack Auto Hosting";
             "enabled" = true;
@@ -46,14 +54,29 @@
             "_c9" = "Moves resource pack generation earlier when running on server. Might break some mods.";
             "setup_early" = false;
           });
+          "config/polymer/resource-pack.json" = pkgs.writeText "polymer-resource-pack.json" (builtins.toJSON {
+            "_c0" = "UUID of default/main resource pack.";
+            "main_uuid" = "ace3b452-e771-4c34-bb0d-778755f721d5";
+            "_c1" = "Marks resource pack as required, only effects clients and mods using api to check it";
+            "markResourcePackAsRequiredByDefault" = false;
+            "_c5" = "Included resource packs from mods!";
+            "include_mod_assets" = [];
+            "_c6" = "Included resource packs from zips!";
+            "include_zips" =
+              [
+                "world/resources.zip"
+              ]
+              ++ resourcepackZips;
+            "_c7" = "Path used for creation of default resourcepack!";
+            "resource_pack_location" = "polymer/resource_pack.zip";
+            "_c8" = "Prevents selected paths from being added to resource pack, if they start with provided text.";
+            "prevent_path_with" = [];
+            "_c9" = "Removes the incompatibility warning on the default pack, by marking it as compatible with everything.";
+            "ignore_pack_version" = false;
+          });
           "resourcepacks" = with pkgs;
             linkFarmFromDrvs "resourcepacks" (
-              builtins.attrValues {
-                DungeonsAndTaverns = fetchurl {
-                  url = "https://cdn.modrinth.com/data/tpehi7ww/versions/jHLhATWl/DnT%20v4.7.zip";
-                  sha512 = "69513a5522a2379f44230146179215b74339b7ca47f6114aa69ba31bda8b25a54a8ccf89dd7211339eeeb03edd32c2154a8bd7efc1d9b64006ca5c7ba953ec0e";
-                };
-              }
+              builtins.attrValues resourcepackDefs
             );
           "mods" = with pkgs;
             linkFarmFromDrvs "mods" (
