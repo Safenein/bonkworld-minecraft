@@ -205,6 +205,25 @@
   # Time zone (adjust as needed)
   time.timeZone = "Europe/Paris";
 
+  # GRUB Bootloader configuration
+  boot.loader.grub = {
+    enable = true;
+    efiSupport = true;
+    efiInstallAsRemovable = false;
+    default = "nodev";
+    useOSProber = false;
+    configurationLimit = 5;
+    extraConfig = ''
+      set timeout=5
+      if loadfont unicode ; then
+        set gfxmode=auto
+        insmod all_video
+        insmod gfxterm
+        terminal_output gfxterm
+      fi
+    '';
+  };
+
   # Locale settings
   i18n.defaultLocale = "en_US.UTF-8";
 }

@@ -21,14 +21,14 @@
 
   fileSystems."/boot" =
     { device = lib.mkDefault "/dev/disk/by-partlabel/disk-main-boot";
-      fsType = "vfat";
-      options = [ "fmask=0022" "dmask=0022" ];
+      fsType = "ext4";
+      options = [ "noatime" ];
     };
 
   fileSystems."/boot/efi" =
     { device = lib.mkDefault "/dev/disk/by-partlabel/disk-main-ESP";
       fsType = "vfat";
-      options = [ "fmask=0022" "dmask=0022" ];
+      options = [ "fmask=0077" "dmask=0077" "uid=0" "gid=0" ];
     };
 
   fileSystems."/home" =

@@ -8,24 +8,18 @@
           type = "gpt";
           partitions = {
             ESP = {
-              size = "512M";
+              size = "1G";512M
               type = "EF00";
               content = {
                 type = "filesystem";
                 format = "vfat";
-                mountpoint = "/boot/efi";
-                mountOptions = [
-                  "fmask=0022"
-                  "dmask=0022"
-                ];
-              };
-            };
-            boot = {
-              size = "1G";
-              content = {
-                type = "filesystem";
-                format = "vfat";
                 mountpoint = "/boot";
+                mountOptions = [
+                  "fmask=0077"
+                  "dmask=0077"
+                  "uid=0"
+                  "gid=0"
+                ];
               };
             };
             swap = {
@@ -42,31 +36,31 @@
                 subvolumes = {
                   "@" = {
                     mountpoint = "/";
-                    mountOptions = ["noatime" "nodiratime" "discard"];
+                    mountOptions = ["noatime" "compress=zstd" "discard"];
                   };
                   "@home" = {
                     mountpoint = "/home";
-                    mountOptions = ["noatime" "nodiratime" "discard"];
+                    mountOptions = ["noatime" "compress=zstd" "discard"];
                   };
                   "@var" = {
                     mountpoint = "/var";
-                    mountOptions = ["noatime" "nodiratime" "discard"];
+                    mountOptions = ["noatime" "compress=zstd" "discard"];
                   };
                   "@var_log" = {
                     mountpoint = "/var/log";
-                    mountOptions = ["noatime" "nodiratime" "discard"];
+                    mountOptions = ["noatime" "compress=zstd" "discard"];
                   };
                   "@opt" = {
                     mountpoint = "/opt";
-                    mountOptions = ["noatime" "nodiratime" "discard"];
+                    mountOptions = ["noatime" "compress=zstd" "discard"];
                   };
                   "@tmp" = {
                     mountpoint = "/tmp";
-                    mountOptions = ["noatime" "nodiratime" "discard"];
+                    mountOptions = ["noatime" "compress=zstd" "discard"];
                   };
                   "@srv" = {
                     mountpoint = "/srv";
-                    mountOptions = ["noatime" "nodiratime" "discard"];
+                    mountOptions = ["noatime" "compress=zstd" "discard"];
                   };
                 };
               };
