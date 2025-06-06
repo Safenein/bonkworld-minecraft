@@ -93,10 +93,6 @@
                   url = "https://cdn.modrinth.com/data/5710VC7f/versions/aOahWdc9/polydecorations-0.7.4%2B1.21.5.jar";
                   sha512 = "c34b6e83e3a0600c7dcbe13f6872f883360c10f677b4145e50c85f472c1ed9dd22bc615f3680257f9b822e27565266d95f0aae63d2f338e7a7eb3d755d1baf6c";
                 };
-                PolyFactory = fetchurl {
-                  url = "https://cdn.modrinth.com/data/MikpSrAF/versions/6TpfrCzs/polyfactory-0.7.1%2B1.21.5.jar";
-                  sha512 = "8315d6a0503c44e28732f90c490a6050164229e8d50d79c663a1bd43e7107f39c97aa629de099386418ad8ecf9d952722c22bce4f8350845d944f32a26afbce5";
-                };
                 PolySit = fetchurl {
                   url = "https://cdn.modrinth.com/data/G9eJHDO2/versions/RxruJi0u/polysit-0.9.5%2Bmc.1.21.5.jar";
                   sha512 = "9e628a0a0097576bfa0572021a0449124bb45214892948255b35b4d45bacdf0861a5828289347606d95b97d314e7cf534fa39c10a2f744dbea3f6cdd529e0679";
