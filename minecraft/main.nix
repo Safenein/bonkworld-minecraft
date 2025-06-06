@@ -202,5 +202,13 @@
         };
       };
     };
+
+    # Use systemd-tmpfiles for proper directory management
+    systemd.tmpfiles.rules = [
+      # Create /run/minecraft directory with proper ownership
+      "d /run/minecraft 0755 minecraft minecraft -"
+      # Set ownership for any sockets created in the directory
+      "Z /run/minecraft 0755 minecraft minecraft -"
+    ];
   };
 }
