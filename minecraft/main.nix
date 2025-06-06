@@ -79,6 +79,16 @@
             linkFarmFromDrvs "resourcepacks" (
               builtins.attrValues resourcepackDefs
             );
+          "datapacks/bonkworld/datapacks" = with pkgs;
+            linkFarmFromDrvs "datapacks" (
+              builtins.attrValues {
+                # Cabbage substances addon for Brewery
+                CabbageSubstances = fetchurl {
+                  url = "https://cdn.modrinth.com/data/nr7cSJlY/versions/XFrtRxXM/brewery-0.11.1%2B1.21.5.jar";
+                  sha512 = "c3a96616076f7e1b7b09b1ef8df79e9f2a140e7e49772e6b9063da361e270df708d06a8558232cb389a51e9ebdefb90867d6f2f47bf5a1ac42e12f1b8de7455a";
+                };
+              }
+            );
           "mods" = with pkgs;
             linkFarmFromDrvs "mods" (
               builtins.attrValues {
@@ -173,6 +183,10 @@
                   # PolyTrinkets is a mod that allows players to wear trinkets
                   url = "https://cdn.modrinth.com/data/G8hlgtEk/versions/85PakGw6/trinkets-3.11.0-beta.1%2Bpolymerport.1.jar";
                   sha512 = "21ffc1d1c966c8b70f0e7702cac4562042855f161b09b2c2b636c5d7e23364da5603ea7af0923a03d7f1b1db976eea0c7a8b8b3d4cc0cff1ed39068efef03774";
+                };
+                Brewery = fetchurl {
+                  url = "https://cdn.modrinth.com/data/nr7cSJlY/versions/XFrtRxXM/brewery-0.11.1%2B1.21.5.jar";
+                  sha512 = "c3a96616076f7e1b7b09b1ef8df79e9f2a140e7e49772e6b9063da361e270df708d06a8558232cb389a51e9ebdefb90867d6f2f47bf5a1ac42e12f1b8de7455a";
                 };
                 MoreTools = fetchurl {
                   # MoreTools adds more tools to the game
