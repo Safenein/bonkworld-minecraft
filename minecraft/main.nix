@@ -79,16 +79,6 @@
             linkFarmFromDrvs "resourcepacks" (
               builtins.attrValues resourcepackDefs
             );
-          # "bonkworld/datapacks" = with pkgs;
-          #   linkFarmFromDrvs "datapacks" (
-          #     builtins.attrValues {
-          #       # Cabbage substances addon for Brewery
-          #       CabbageSubstances = fetchurl {
-          #         url = "https://cdn.modrinth.com/data/izSO2Rn2/versions/vwYeKHZy/cabbage-substances-1.3.0.2-0.11.1.zip";
-          #         sha512 = "b759b74858dfc7ed62afc8702b1a9eaad7be8cae42b758fa819c37eb9367ea2fdb6980967fbf054f66478913e494c5e5a8b6d1cf6116546a246ef7cf83c01469";
-          #       };
-          #     }
-          #   );
           "mods" = with pkgs;
             linkFarmFromDrvs "mods" (
               builtins.attrValues {
