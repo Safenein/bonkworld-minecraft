@@ -79,7 +79,7 @@
             linkFarmFromDrvs "resourcepacks" (
               builtins.attrValues resourcepackDefs
             );
-          "datapacks/bonkworld/datapacks" = with pkgs;
+          "bonkworld/datapacks" = with pkgs;
             linkFarmFromDrvs "datapacks" (
               builtins.attrValues {
                 # Cabbage substances addon for Brewery
