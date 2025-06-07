@@ -124,6 +124,20 @@
                   url = "https://cdn.modrinth.com/data/nPZr02ET/versions/3xwbxqcv/netherportalfix-fabric-1.21.5-21.5.1.jar";
                   sha512 = "267ed5768d1a232bad907cbd5b1f226309ad1953f7267b6308c3172cad842bb5ab51d34c4530b373ab24c54e3d97a9cba33832eac1bf9fa3cf362bfd754ae7c3";
                 };
+                C2ME = fetchurl {
+                  # C2ME is a performance optimization mod that improves chunk loading and generation
+                  url = "https://cdn.modrinth.com/data/VSNURh3q/versions/jrmtD6AF/c2me-fabric-mc1.21.5-0.3.3.0.0.jar";
+                  sha512 = "4d6a3efcef9aaec8b494f1ac5917c5230175d6485592243a45eb2ee263baf481ce07681b0fb5b65a4969cd08d4708e001a83b17949dad32a646a8ea26052a9f9";
+                };
+                ScalableLux = fetchurl {
+                  # ScalableLux is a lighting mod that improves lighting performance
+                  url = "https://cdn.modrinth.com/data/Ps1zyz6x/versions/UueJNiJn/ScalableLux-0.1.3%2Bbeta.1%2Bfabric.4039a8d-all.jar";
+                  sha512 = "144dd32f5f7b9c015ae2ff2efc8ba58c561d0fae7a22aba071f0d45f8b3154ae8d23783e9a0308c80eee51857a0ef68191c444830e5da3b44021f03b55a26da2";
+                };
+                PolyFactory = fetchurl {
+                  url = "https://cdn.modrinth.com/data/MikpSrAF/versions/JkwF31tM/polyfactory-0.7.2%2B1.21.5.jar";
+                  sha512 = "1a115576ee52429ab775d7cb7b485bc19c4fe3459ef24ec5003edc3c579aafca151bb1ea6a51dada33cb34188da3e51b83710e778200b5ec2964345da0e409c2";
+                };
                 DungeonsAndTaverns = fetchurl {
                   # Dungeons and Taverns adds new structures to the game
                   url = "https://cdn.modrinth.com/data/tpehi7ww/versions/xuwRmYo8/dungeons-and-taverns-v4.7.jar";
