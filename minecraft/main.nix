@@ -135,6 +135,7 @@
                   sha512 = "144dd32f5f7b9c015ae2ff2efc8ba58c561d0fae7a22aba071f0d45f8b3154ae8d23783e9a0308c80eee51857a0ef68191c444830e5da3b44021f03b55a26da2";
                 };
                 PolyFactory = fetchurl {
+                  # PolyFactory adds factory blocks and items
                   url = "https://cdn.modrinth.com/data/MikpSrAF/versions/JkwF31tM/polyfactory-0.7.2%2B1.21.5.jar";
                   sha512 = "1a115576ee52429ab775d7cb7b485bc19c4fe3459ef24ec5003edc3c579aafca151bb1ea6a51dada33cb34188da3e51b83710e778200b5ec2964345da0e409c2";
                 };
