@@ -79,6 +79,7 @@
             linkFarmFromDrvs "resourcepacks" (
               builtins.attrValues resourcepackDefs
             );
+          "server-icon.png" = ./server-icon.png;
           "mods" = with pkgs;
             linkFarmFromDrvs "mods" (
               builtins.attrValues {
