@@ -89,7 +89,7 @@
                   sha512 = "159cf97b0869c923e3b7f477db8eefe70e4a4906f3663ac4e9c23e4237bbd0e07d79405de6b323a7a9989c76d33959770ba499abba12c90d64ca710c079b2bc7";
                 };
                 Ferrite-Core = fetchurl {
-                  # FerriteCore is a performance optimization mod
+                  # FerriteCore is a perf§²mance optimization mod
                   url = "https://cdn.modrinth.com/data/uXXizFIs/versions/CtMpt7Jr/ferritecore-8.0.0-fabric.jar";
                   sha512 = "131b82d1d366f0966435bfcb38c362d604d68ecf30c106d31a6261bfc868ca3a82425bb3faebaa2e5ea17d8eed5c92843810eb2df4790f2f8b1e6c1bdc9b7745";
                 };
@@ -228,6 +228,14 @@
                   # Teleportation elevator mod
                   url = "https://cdn.modrinth.com/data/9kdDMOvM/versions/Nck9ihns/televator-1.2.4.jar";
                   sha512 = "85095585efbf2401fa24f9349e37dc7e428a107567c9f572bb31e2235fe23880d03920bd2ce04dca15215a59278cf158d1c33d5828146402089d4cf772e799ab";
+                };
+                Polydex = fetchurl {
+                  url = "https://cdn.modrinth.com/data/m5NB7FJE/versions/DraVXSn1/polydex-1.5.0%2B1.21.5-rc2.jar";
+                  sha512 = "159ea9b5abfa1a621361655ef3707b835a9d76025a015bad62f843a652c1e7d5fe80f219ab73bac4e6ecba416983e770f427dce32fc76954d1bfe4d1f6acc896";
+                };
+                PolyBook = fetchurl {
+                  url = "https://cdn.modrinth.com/data/mfUbqC07/versions/iC8sQpzm/polybook-1.0.0.jar";
+                  sha512 = "7ca823f6eb4cf09d0370a0373bdc8b967e28c85507c11c464ea1c10253498f6112e20672e778ef0a990143f4420cf19c2f9a756bed2e7ea00a106ca7c4accb77";
                 };
                 GoneFishing = fetchurl {
                   # Gone Fishing adds new fishing mechanics and items
