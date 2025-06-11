@@ -125,6 +125,10 @@
                   url = "https://cdn.modrinth.com/data/uCdwusMi/versions/Mt9bDAs6/DistantHorizons-neoforge-fabric-2.3.2-b-1.21.5.jar";
                   sha512 = "e17d845f5ddb71a9ca644875a02b845e045bb5c7e72429e120271636936a816b416bb4ba13789de18c3af6a1a5f5b7ed5dbe07326c60d5c49534a382310dab1f";
                 };
+                SSWaystone = fetchurl {
+                  url = "https://cdn.modrinth.com/data/BzV6ulv0/versions/SDT5FFxH/sswaystones-1.2.2.jar";
+                  sha512 = "5bc4f7b9270bd5f5fb816c90272b594f9585e5eb9be29a90fc4c3873235c9e337cd4f8a76f9c62cec36583759f5468bede258b9a483a79c0e6402a002da24f5f";
+                };
                 NetherPortalFix = fetchurl {
                   # Nether Portal Fix fix mismatch issues
                   url = "https://cdn.modrinth.com/data/nPZr02ET/versions/3xwbxqcv/netherportalfix-fabric-1.21.5-21.5.1.jar";
