@@ -16,6 +16,7 @@
           motd = "Bienvenue sur Bonk World!";
           difficulty = "normal";
           level-name = "bonkworld";
+          white-list = true;
           enable-command-block = true;
           max-players = 50;
           enforce-secure-profile = false;
