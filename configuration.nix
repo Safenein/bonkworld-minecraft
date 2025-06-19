@@ -127,6 +127,8 @@
     "fs.suid_dumpable" = 0;
   };
 
+  networking.interfaces.enp1s0.wakeOnLan.enable = true;
+
   # Enable udev for device management
   services.udev.enable = true;
 
