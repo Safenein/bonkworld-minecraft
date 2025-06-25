@@ -6,7 +6,7 @@
 
       servers.bonkworld = {
         enable = true;
-        package = pkgs.fabricServers.fabric-1_21_5;
+        package = pkgs.fabricServers.fabric-1_21_6;
         autoStart = true;
         openFirewall = true;
         enableReload = true;
